@@ -1,0 +1,14 @@
+﻿@model Fluffy_Duffy_Munchkin_Cats.Models.Cat
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@Model.Name</h1>
+
+<div>
+    <img style="max-width: 300px" src="@Model.ImageUrl" alt="Alternate Text" />
+    <p class="font-weight-bold">Age: @Model.Age</p>
+    <p class="font-weight-bold">Breed: @Model.Breed</p>
+</div>

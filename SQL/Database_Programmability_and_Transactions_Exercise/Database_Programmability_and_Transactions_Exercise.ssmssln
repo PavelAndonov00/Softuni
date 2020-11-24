@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 14.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Database_Programmability_and_Transactions_Exercise", "Database_Programmability_and_Transactions_Exercise\Database_Programmability_and_Transactions_Exercise.ssmssqlproj", "{27059E92-247A-45F3-943B-46CB821E9AFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27059E92-247A-45F3-943B-46CB821E9AFD}.Default|Default.ActiveCfg = Default
+		{96F48EE8-B7C8-4CE9-ABBD-AF314DD0342C}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

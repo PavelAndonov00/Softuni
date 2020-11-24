@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Builder</title>
+    <style>td,th { background:#DDD; padding:5px }</style>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div id="main"></div>
+<script>
+    function tableBuilder(selector) {
+        return {
+            createTable: function (props) {
+                // create table
+                let table = $("<table>");
+                table.addClass("table");
+
+                // create tr and append props to th
+                let tr = $("<tr>");
+                for (let prop of props) {
+                    let th = $("<th>");
+                    th.text(prop);
+
+                    tr.append(th);
+                }
+
+                // append tr to table and table to selector
+                tr.append($("<th>").text("Action"));
+                table.append(tr);
+                $(selector).empty();
+                $(selector).append(table);
+            },
+            fillData: function (props) {
+                for (let i = 0; i < props.length; i++) {
+                    let tr = $("<tr>");
+                    for (let prop of props[i]) {
+                        let td = $("<td>");
+                        td.text(prop);
+
+                        tr.append(td);
+                    }
+
+                    let tdBtn = $("<td>");
+                    let button = $("<button>");
+                    button.text("Delete");
+                    button.click(function () {
+                        $(this).parent().parent().remove();
+                    });
+                    tdBtn.append(button);
+                    tr.append(tdBtn);
+
+                    $("table").append(tr);
+                }
+            }
+        }
+    }
+</script>
+<script>
+    $(function() {
+        let builder = tableBuilder("#main");
+        builder.createTable(['Name', 'Town']);
+        builder.fillData([
+            ['Maria', 'Sofia'],
+            ['Kiril', 'Varna'],
+            ['Ani <new>', 'Ruse'],
+        ]);
+    });
+</script>
+</body>
+</html>

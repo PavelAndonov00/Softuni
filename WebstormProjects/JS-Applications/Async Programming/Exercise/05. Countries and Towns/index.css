@@ -1,0 +1,56 @@
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.wrapper div:first-child {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.wrapper div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    width: 55%;
+}
+
+table {
+    border: 2px solid gray;
+}
+
+table thead tr{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+
+table tr {
+    background-color: greenyellow;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.addTown, #addCountry {
+    display: block;
+}
+
+button {
+    margin: auto;
+}
+
+legend {
+    text-align: center;
+}
+
+p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+input {
+    width: 100px;
+}
+

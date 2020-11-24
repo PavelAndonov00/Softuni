@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countries and Towns</title>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="countries">
+        <fieldset>
+            <legend>Countries</legend>
+            <table id="countries">
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Country</legend>
+            <input type="text" placeholder="Country" id="country">
+            <button id="addCountry">Add Country</button>
+            <p id="countryLoad">Loading...</p>
+        </fieldset>
+    </div>
+    <div id="towns">
+        <fieldset>
+        <legend>Towns</legend>
+        <table class="towns">
+            <thead>
+            <tr>
+                <th>Town</th>
+                <th>Country</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        </fieldset>
+        <fieldset>
+            <legend>Town</legend>
+            <input type="text" placeholder="Town" class="town">
+            <input type="text" placeholder="Country" class="country">
+            <button class="addTown">Add Town</button>
+            <p id="townLoad">Loading...</p>
+        </fieldset>
+    </div>
+</div>
+<script src="solution.js"></script>
+</body>
+</html>

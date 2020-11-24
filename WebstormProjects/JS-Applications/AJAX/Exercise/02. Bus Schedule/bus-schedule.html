@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bus Schedule</title>
+    <style>
+        #schedule {
+            text-align: center;
+            width: 400px;
+        }
+
+        input {
+            width: 120px;
+        }
+
+        #info {
+            background-color: aquamarine;
+            border: 1px solid black;
+            margin: 0.25em;
+        }
+
+        .info {
+            font-size: 1.5em;
+            padding: 0.25em;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div id="schedule">
+    <div id="info"><span class="info">Not Connected</span></div>
+    <div id="controls">
+        <input id="depart" value="Depart" type="button" onclick="result.depart()">
+        <input id="arrive" value="Arrive" type="button" onclick="result.arrive()" disabled="true">
+    </div>
+</div>
+<script>
+    function solve() {
+        const BASE_URL = 'https://judgetests.firebaseio.com/schedule/';
+        const departInput = $('#depart');
+        const arriveInput = $('#arrive');
+        const info = $('#info');
+        let current = "depot";
+
+
+        let depart = function () {
+            $.get({
+                url: BASE_URL + current + '.json',
+            }).then(function (resObj) {
+                console.log(resObj.name);
+                info.text('Next stop ' + resObj.name);
+                current = resObj.next;
+                departInput.attr("disabled", true);
+                arriveInput.attr("disabled", false);
+            }).catch(function (Err) {
+                handleError()
+            })
+        };
+
+        let arrive = function () {
+            let infoText = info.text();
+            infoText = infoText.slice(9);
+
+            info.text("Arriving at " + infoText);
+            departInput.attr("disabled", false);
+            arriveInput.attr("disabled", true);
+        };
+
+        return {
+            depart,
+            arrive
+        };
+
+        function handleError() {
+            info.text('Error');
+            departInput.prop('disabled', true);
+            arriveInput.prop('disabled', true);
+        }
+    }
+
+    let result = solve();
+</script>
+</body>
+</html>

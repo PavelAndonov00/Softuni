@@ -1,0 +1,11 @@
+﻿namespace P03_FootballBetting.Data
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    public class Config
+    {
+        public const string connectionString = @"Server=DESKTOP-3D63KAF\SQLEXPRESS;Database=FootballBetting;Integrated Security=true;";
+    }
+}

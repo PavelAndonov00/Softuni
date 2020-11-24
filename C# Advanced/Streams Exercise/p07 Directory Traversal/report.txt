@@ -1,0 +1,8 @@
+.json
+--p07 Directory Traversal.runtimeconfig.json - 154kb
+--p07 Directory Traversal.runtimeconfig.dev.json - 234kb
+--p07 Directory Traversal.deps.json - 501kb
+.dll
+--p07 Directory Traversal.dll - 6656kb
+.pdb
+--p07 Directory Traversal.pdb - 1144kb

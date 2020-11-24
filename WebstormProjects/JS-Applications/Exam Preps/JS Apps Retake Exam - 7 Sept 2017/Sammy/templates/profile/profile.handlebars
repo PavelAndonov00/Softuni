@@ -1,0 +1,31 @@
+{{> header}}
+<section id="viewProfile">
+    <div class="content">
+        <div class="chirper">
+
+            <h2 class="titlebar">SoftUni</h2>
+
+            <a id="btnFollow" class="chirp-author" href="#/follow">Follow</a>
+
+            <div id="userProfileStats" class="user-details">
+                <span>1 chirps</span> | <span>0 following</span> | <span>2 followers</span>
+            </div>
+        </div>
+        <div id="profileChirps" class="chirps"><h2 class="titlebar">Chirps</h2>
+            <article class="chirp">
+                {{#if userChirps}}
+                {{#each userChirps}}
+                <div class="titlebar">
+                    <a href="#/author" class="chirp-author">{{author}}</a>
+                    <span class="chirp-time">{{time}}</span>
+                </div>
+                <p>{{text}}</p>
+                {{/each}}
+                {{else}}
+
+                {{/if}}
+            </article>
+        </div>
+    </div>
+</section>
+{{> footer}}
