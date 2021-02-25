@@ -1,0 +1,22 @@
+@import url("https://use.fontawesome.com/releases/v5.15.2/css/all.css");
+
+.button{
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 5px;
+    border: 2px solid rgb(51, 51, 51);
+}
+
+body{
+    background: rgb(251,251, 251);
+}
+
+.fill{
+    background: rgb(51, 51, 51);
+    color: rgb(251,251, 251);
+}
+
+.hover:hover{
+    background: rgb(0, 102, 0);
+    color: rgb(51, 51, 51);
+}
