@@ -1,0 +1,59 @@
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-container .table-section {
+    width: 90%;
+    margin-left: auto;
+}
+
+.main-container .table-section h3, .postbank-section h3{
+    opacity: 0.7;
+    margin-bottom: 1.5em;
+}
+
+.main-container .table-section p{
+    margin-bottom: 2.5em;
+}
+
+.main-container .table-section table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main-container .table-section table td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+.main-container .table-section table td:first-child {
+    width: 60%;
+}
+
+.main-container .table-section table td:nth-child(2) {
+    width: 30%;
+}
+
+.main-container .table-section table tr:nth-child(odd) {
+    background-color: #E6E6E6;
+}
+
+.main-container .postbank-section {
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container .postbank-section article {
+    flex-basis: 60%;
+}
+
+.main-container .postbank-section article p {
+    margin-top: 1.5em;
+}
+
+.main-container .postbank-section img {
+    position: relative;
+    right: -82px;
+}
