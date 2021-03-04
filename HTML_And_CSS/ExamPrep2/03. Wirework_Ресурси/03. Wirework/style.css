@@ -1,0 +1,204 @@
+@import url("https://use.fontawesome.com/releases/v5.15.2/css/all.css");
+
+* {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1980px;
+}
+
+.container-smaller {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.header-navigation {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-navigation-logo {
+    display: flex;
+}
+
+.header-navigation-logo h1 {
+    margin-right: 15px;
+    font-size: 2em;
+}
+
+.header-navigation-logo p {
+   margin-top: 13px;
+}
+
+.header-navigation h1::after {
+    content: '';
+    border-right: 1px solid black;
+    width: 1px;
+    height: 20px;
+    margin-left: 15px;
+    opacity: 0.6;
+}
+
+.header-navigation ul {
+    list-style: none;
+    display: flex;
+}
+
+.header-navigation ul li {
+    padding: 20px;
+    background-color: #ECECEC;
+    margin-right: 2px;
+}
+
+.header-navigation ul li:hover {
+    background-color: #E24E2A;
+    cursor: pointer;
+}
+
+.header-navigation ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-navigation ul li:hover a {
+    color: white;
+}
+
+.header-image-wrapper {
+    max-width: 1980px;
+}
+
+.header-image-wrapper img {
+    width: 100%;
+    max-height: 650px;
+    object-fit: cover;
+}
+
+.main-about-us {
+    background-color: #E24E2A;
+    padding: 70px;
+    margin-top: -5px;
+}
+
+.main-about-us p {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.main-about-us p a {
+    color: white;
+}
+
+.main-articles-wrapper {
+    background-color: #383838;
+}
+
+.main-articles {
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-article {
+    flex-basis: 23%;
+}
+
+.main-article-icon-wrapper {
+    background-color: #E24E2A;
+    padding: 20px;
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-article-icon-wrapper i {
+    color: white;
+    font-size: 65px;
+}
+
+.main-article h4 {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid grey;
+}
+
+.main-article p {
+    padding-top: 30px;
+    color: grey;
+    text-align: center;
+}
+
+.main-subscription {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-subscription-heading {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.main-subscription-subheading {
+    text-align: center;
+    color: grey;
+}
+
+.main-subscription-btn {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    background-color: #1B9772;
+    color: white;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.main-info-wrapper {
+    background-color: #383838;
+}
+
+.main-info {
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-info-article {
+    flex-basis: 23%;
+}
+
+.main-info-article h3 {
+    color: white;
+    text-align: center;
+}
+
+.main-info-article p {
+    color: grey;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #1B9772;
+    padding: 100px;
+}
+
+.footer p {
+    color: white;
+    opacity: 0.7;
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+@media all and (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation-list {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .benefits {
+        flex-direction: column;
+    }
+
+    .benefit-item-text {
+        width: 65%;
+    }
+
+    .cta-section {
+        width: 50%;
+    }
+
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-section-item {
+        width: 300px;
+        margin-top: 50px;
+    }
+
+    body > header > article.header-img-wrapper > img {
+        display: none;
+    }
+
+    footer {
+        padding: 40px 170px;
+    }
+}
