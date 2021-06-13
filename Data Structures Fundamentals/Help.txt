@@ -1,0 +1,51 @@
+Linear data structures
+Array
+List
+Stack
+Queue
+LinkedList
+
+Complexity
+
+List
+Count, Get and Set through indexer - O(1)
+Add(T item) - amortized constant time O(1)/O(n)
+Insert, Contains, IndexOf, Remove, RemoveAt and all others 0(n)
+
+Stack
+Count, Push, Pop, Peek - O(1)
+All others O(n)
+
+Queue
+Count, Dequeue, Peek – O(1)
+Enqueue with tail - O(1) without O(n)
+All others O(n)
+
+LinkedList
+AddFirst, RemoveFirst, GetFirst, Count – O(1)
+AddLast, RemoveLast, GetLast with ref to last node O(1) without O(n)
+All others O(n)
+
+BinaryTree
+
+Full Binary Tree - each node has 0 or 2 children
+Complete Binary Tree - each node has 2 children but leaf nodes are not at the same level
+Perfect Binary Tree - each node has 2 children and leaf nodes are at the same level
+
+PreOrder Traversal
+Root -> Left -> Right
+
+InOrder Traversal
+Left -> Root -> Right
+
+PostOrder Traversal
+Left -> Right -> Root
+
+Heap is tree-based data structure stored in array
+There are two types min heap and max heap - its understood what is what
+
+Binary heap - binary tree
+
+Priority queue - queue the most significant element
+
+Binary search tree (BST) avg, best O(log n) worst O(n)
