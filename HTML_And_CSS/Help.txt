@@ -1,0 +1,8 @@
+ITCSS -> 7 levels inverted triangle
+1. Settings (Variables, configuration of the application)
+2. Tools (Mixin and functions)
+3. Generic (Normalize and reset)
+4. Elements (Default styles of tags)
+5. Object (Some container, some separate part)
+6. Components (The most reusable parts)
+7. Utilities (The most specific things, some overrides and etcetera)
