@@ -1,6 +1,14 @@
-***Dijkstra algorithm
----Shortest path
-***Prim and Kruskal algorithms
----MST(Minimum spanning tree)
-***Bellman-Ford
-----Shortest path - negative weights as well
+Dijkstra algorithm
+Shortest path
+
+Prim and Kruskal algorithms
+MST(Minimum spanning tree)
+
+Bellman-Ford
+Shortest path -negative weights
+
+Kosaraju–Sharir
+Strongly-connected components
+
+Edmonds-Karp
+Max flow algorith
