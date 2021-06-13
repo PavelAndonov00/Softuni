@@ -12,3 +12,18 @@ Strongly-connected components
 
 Edmonds-Karp
 Max flow algorith
+
+
+Complexity of sorting algorithms:
+
+Merge sort
+(n * log n) all
+
+Quick sort
+(n * log n) avg, best (n2) worst
+
+Bubble, selection sort
+(n2) all
+
+Insertion sort
+(n) best (n2) avg, worst
